@@ -1,0 +1,33 @@
+header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 1;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .logo img {
+        max-height: 80px;
+    }
+    nav {
+        ul {
+            display: flex;
+            li a {
+                padding: 40px 15px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: .8rem;
+                &:hover, &.active {
+                    color: $brandColor;
+                    border-bottom: 4px solid $brandColor;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}
