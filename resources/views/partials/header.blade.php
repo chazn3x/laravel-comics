@@ -9,7 +9,8 @@
             <ul>
                 @foreach ($links as $link)
                 <li>
-                    <a class="{{$link["current"] ? "active" : ""}}" href="{{$link["url"]}}">{{$link["text"]}}</a>
+                    {{-- <a class="{{$link["current"] ? "active" : ""}}" href="{{$link["url"]}}">{{$link["text"]}}</a> --}}
+                    <a class="header-link" href="{{$link["url"]}}">{{$link["text"]}}</a>
                 </li>
                 @endforeach
             </ul>

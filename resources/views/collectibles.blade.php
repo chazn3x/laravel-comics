@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('pageTitle')
-    Movies
+    Collectibles
 @endsection
 
 @section('pageContent')
@@ -14,7 +14,7 @@
         </div>
         <div class="container">
             <section>
-                <h2>Movies</h2>
+                <h2>Collectibles</h2>
                 <div class="load-more">
                     <a href="#">Load more</a>
                 </div>
