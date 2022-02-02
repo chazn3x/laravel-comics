@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;
-
-0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);* {
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,6 +6,7 @@
 
 body {
   font-family: "Fira Sans Condensed", sans-serif;
+  color: rgba(0, 0, 0, 0.95);
 }
 
 ul li {
@@ -16,7 +15,7 @@ ul li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.95);
 }
 
 .container {
@@ -31,22 +30,18 @@ header {
   padding: 0 20px;
   z-index: 1;
 }
-
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
 }
-
 header .logo img {
   max-height: 80px;
 }
-
 header nav ul {
   display: flex;
 }
-
 header nav ul li a {
   padding: 40px 15px;
   text-decoration: none;
@@ -54,11 +49,114 @@ header nav ul li a {
   font-weight: 500;
   font-size: 0.8rem;
 }
-
-header nav ul li a:hover,
-header nav ul li a.active {
+header nav ul li a:hover, header nav ul li a.active {
   color: #0f7cec;
   border-bottom: 4px solid #0f7cec;
   transition: 0.3s;
 }
 
+footer .footer-top {
+  background: #0f7cec;
+  padding: 50px 20px;
+}
+footer .footer-top ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footer-top ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+footer .footer-top ul li a span {
+  color: rgba(255, 255, 255, 0.95);
+}
+footer .footer-top ul li a img {
+  height: 50px;
+  margin: 0 15px;
+}
+footer .footer-top ul li:last-child a img {
+  height: 40px;
+}
+footer .footer-main {
+  background-image: url("../images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 20px;
+}
+footer .footer-main .container {
+  padding: 40px 0;
+  background-image: url("../images/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right;
+  display: flex;
+}
+footer .footer-main .col {
+  margin-right: 25px;
+}
+footer .footer-main .col h3 {
+  color: rgba(255, 255, 255, 0.95);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+footer .footer-main .col li a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer .footer-main .col li a:hover {
+  color: #0f7cec;
+}
+footer .footer-main .col:first-of-type h3:last-of-type {
+  margin-top: 20px;
+}
+footer .footer-bottom {
+  background-color: #303030;
+  padding: 20px 20px;
+}
+footer .footer-bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-bottom .sign {
+  border: 2px solid #0f7cec;
+  padding: 10px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.95);
+  transition: 0.3s;
+}
+footer .footer-bottom .sign:hover {
+  background-color: #0f7cec;
+}
+footer .footer-bottom .socials {
+  display: flex;
+  align-items: center;
+}
+footer .footer-bottom .socials span {
+  color: #0f7cec;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-right: 20px;
+}
+footer .footer-bottom .socials .icons {
+  display: flex;
+}
+footer .footer-bottom .socials .icons .icon {
+  margin: 0 7px;
+  transition: 0.3s;
+}
+footer .footer-bottom .socials .icons .icon img {
+  height: 30px;
+}
+footer .footer-bottom .socials .icons .icon:hover {
+  opacity: 0.8;
+}

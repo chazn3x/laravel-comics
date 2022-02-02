@@ -1,0 +1,109 @@
+footer {
+    .footer-top {
+        background: $brandColor;
+        padding: 50px 20px;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li {
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 500;
+                    font-size: .8rem;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        color: $white;
+                    }
+                    img {
+                        height: 50px;
+                        margin: 0 15px;
+                    }
+                }
+                &:last-child a img {
+                    height: 40px;
+                }
+            }
+        }
+    }
+    .footer-main {
+        background-image: url('../images/footer-bg.jpg');
+        @include backgroundImage();
+        padding: 0 20px;
+        .container {
+            padding: 40px 0;
+            background-image: url('../images/dc-logo-bg.png');
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: right;
+            display: flex;
+        }
+        .col {
+            margin-right: 25px;
+            h3 {
+                color: $white;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            li a {
+                color: rgba(255,255,255,0.5);
+                font-size: .7rem;
+                font-family: Arial, Helvetica, sans-serif;
+                &:hover {
+                    color: $brandColor;
+                }
+            }
+        }
+        .col:first-of-type {
+            h3:last-of-type {
+                margin-top: 20px;
+            }
+        }
+    }
+    .footer-bottom {
+        background-color: rgb(48,48,48);
+        padding: 20px 20px;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .sign {
+            border: 2px solid $brandColor;
+            padding: 10px;
+            text-transform: uppercase;
+            color: $white;
+            transition: .3s;
+            &:hover {
+                background-color: $brandColor;
+            }
+        }
+        .socials {
+            display: flex;
+            align-items: center;
+            span {
+                color: $brandColor;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 1.3rem;
+                margin-right: 20px;
+            }
+            .icons {
+                display: flex;
+                .icon {
+                    margin: 0 7px;
+                    transition: .3s;
+                    img {
+                        height: 30px;
+                    }
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+    }
+}
