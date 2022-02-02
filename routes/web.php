@@ -17,5 +17,6 @@ Route::get('/', function () {
     $headerLinks = config("links");
     $footerTopLinks = config("footerTopLinks");
     $footerMainCategories = config("footerMainCategories");
-    return view('home', ["links" => $headerLinks, "topLinks" => $footerTopLinks, "mainCategories" => $footerMainCategories]);
+    $comics = config("comics");
+    return view('home', ["links" => $headerLinks, "topLinks" => $footerTopLinks, "mainCategories" => $footerMainCategories, "comics" => $comics]);
 });
